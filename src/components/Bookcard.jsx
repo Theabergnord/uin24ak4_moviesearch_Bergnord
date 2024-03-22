@@ -1,5 +1,13 @@
 export default function Bookcard(){
     return(
-        <h3>Bookcard</h3>
+        <article className="bookcard">
+            <img src="#" alt="Forsiden til boken"/>
+            <h2>Title</h2>
+            <p>By Forfatter</p>
+            <p>Først publisert i</p>
+            <p>RATING?</p>
+            <p>BILDE!</p>
+            <button>Kjøp på amazone</button>
+        </article>
     )
 }

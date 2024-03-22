@@ -58,10 +58,30 @@ input{
   margin: 40px auto;
 }
 
+.bookcard{
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(246, 240, 246);
+}
+
+.bookcard button{
+  margin-top: 5px;
+  width: 150px;
+  height: 32px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  background-color:  rgb(246, 240, 246);
+}
+
+.bookcard button:hover{
+  background-color: purple;
+  color: white;
+}
+
 footer{
   text-align: center;
-  position: absolute;
-  bottom: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
