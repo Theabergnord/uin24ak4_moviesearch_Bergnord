@@ -1,9 +1,9 @@
 export default function Searchform(){
     return(
-        <form>
+        <form className="search">
             <label htmlFor="search">Søk etter bøker:</label>
-            <input type="text" id="search" placeholder="James Bond"></input>
-            <input type="submit" value="Søk"></input>    
+            <input className="search-input" type="text" id="search" placeholder="James Bond"></input>
+            <input className="button" type="submit" value="Søk"></input>    
         </form>
     )
 }
