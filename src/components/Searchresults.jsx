@@ -1,9 +1,10 @@
-
-import Searchform from "./Searchform"
-export default function Searchresults(){
+import Bookcard from "./Bookcard"
+export default function Searchresults({books}){
+    
     return(
         <>
-        <Searchform />
+        <h2>Resultat</h2>
+        <Bookcard books={books} />
         </>
     )
 }

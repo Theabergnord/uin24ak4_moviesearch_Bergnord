@@ -79,6 +79,12 @@ input{
   color: white;
 }
 
+.bookcard img{
+  width: 50px;
+  height: auto;
+}
+
+
 footer{
   text-align: center;
   margin-bottom: 20px;
