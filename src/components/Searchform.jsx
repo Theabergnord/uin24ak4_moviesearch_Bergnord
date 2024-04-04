@@ -4,7 +4,8 @@ export default function Searchform({setQuery}){
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        setQuery(search)
+        search.length >= 3 ? setQuery(search) : alert("Søket må inneholde minimum tre tegn!")
+        
     }
 
     const handleChange = (event)=>{

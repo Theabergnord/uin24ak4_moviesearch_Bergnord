@@ -36,7 +36,7 @@ function App() {
         <Searchform setQuery={setQuery}/>
       <Routes>
         <Route path='/' element={<Bookcard books={books} />}></Route>
-        <Route path='resulte' element={<Searchresults books={books} setQuery={setQuery}/>}></Route>
+        {/*<Route path='resulte' element={<Searchresults books={books} setQuery={setQuery}/>}></Route>*/}
       </Routes>
     </Layout>
   </Router>
