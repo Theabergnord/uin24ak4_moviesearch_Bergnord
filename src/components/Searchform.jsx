@@ -12,8 +12,6 @@ export default function Searchform({setQuery, loading}){
         setSearch(event.target.value)
     }
 
-    
-
     return(
         <>
         <form className="search" onSubmit={handleSubmit}>

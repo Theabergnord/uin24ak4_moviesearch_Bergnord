@@ -10,9 +10,9 @@ import Searchform from './components/Searchform'
 
 function App() {
   //Kilde: Forelesnings Category_blogg
+  //Kilde: https://www.youtube.com/watch?v=00lxm_doFYw
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState("james bond")
-  //Kilde: https://www.youtube.com/watch?v=00lxm_doFYw
   const [loading, setLoading] = useState(false)
 
   const getData = async () => {
