@@ -84,6 +84,12 @@ input{
   height: auto;
 }
 
+.loading{
+  margin-top: 1rem;
+  font-size: 18;
+  font-weight: bold;
+  color: purple;
+}
 
 footer{
   text-align: center;

@@ -1,5 +1,5 @@
 import { useState } from "react"
-export default function Searchform({setQuery}){
+export default function Searchform({setQuery, loading}){
     const [search, setSearch] = useState("")
 
     const handleSubmit = (e)=>{
@@ -11,11 +11,19 @@ export default function Searchform({setQuery}){
     const handleChange = (event)=>{
         setSearch(event.target.value)
     }
+
+    
+
     return(
+        <>
         <form className="search" onSubmit={handleSubmit}>
             <label htmlFor="search">Søk etter bøker:</label>
             <input className="search-input" type="text" id="search" placeholder="James Bond" onChange={handleChange}></input>
             <input className="button" type="submit" value="Søk"></input>    
-        </form>
+        </form> 
+        {/*Viser at det laster inn innhold da det tar litt tid*/}
+        {loading ? (<div className="loading">Laster inn innhold...</div>):""} 
+       </>
     )
+    
 }

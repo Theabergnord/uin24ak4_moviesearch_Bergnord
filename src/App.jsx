@@ -13,8 +13,11 @@ function App() {
   //Kilde: Forelesnings Category_blogg
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState("james bond")
+  //Kilde: https://www.youtube.com/watch?v=00lxm_doFYw
+  const [loading, setLoading] = useState(false)
 
   const getData = async () => {
+    setLoading(true)
     try {
       const response = await fetch(`https://openlibrary.org/search.json?q=${query}`);
       const data = await response.json();
@@ -23,6 +26,7 @@ function App() {
     } catch(error){
       console.error('Det har skjedd en feil!')
     }
+    setLoading(false)
   }
      
     useEffect(()=>{
@@ -33,7 +37,7 @@ function App() {
     <>
     <Router>
       <Layout>
-        <Searchform setQuery={setQuery}/>
+        <Searchform setQuery={setQuery} loading={loading}/>
       <Routes>
         <Route path='/' element={<Bookcard books={books} />}></Route>
         {/*<Route path='resulte' element={<Searchresults books={books} setQuery={setQuery}/>}></Route>*/}
