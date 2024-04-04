@@ -4,7 +4,6 @@ import Searchresults from './components/Searchresults'
 import Layout from './components/Layout'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import Bookcard from './components/Bookcard'
 import Searchform from './components/Searchform'
 
 
@@ -19,7 +18,7 @@ function App() {
   const getData = async () => {
     setLoading(true)
     try {
-      const response = await fetch(`https://openlibrary.org/search.json?q=${query}`);
+      const response = await fetch(`https://openlibrary.org/search.json?title=${query}`);
       const data = await response.json();
       setBooks(data.docs);
       console.log(data.docs);
@@ -39,8 +38,7 @@ function App() {
       <Layout>
         <Searchform setQuery={setQuery} loading={loading}/>
       <Routes>
-        <Route path='/' element={<Bookcard books={books} />}></Route>
-        {/*<Route path='resulte' element={<Searchresults books={books} setQuery={setQuery}/>}></Route>*/}
+        <Route path='/' element={<Searchresults books={books} setQuery={setQuery}/>}></Route>
       </Routes>
     </Layout>
   </Router>

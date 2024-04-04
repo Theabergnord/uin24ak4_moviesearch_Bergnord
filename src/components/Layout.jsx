@@ -4,7 +4,7 @@ export default function Layout({children}){
         <>
         <header>
             <nav className="navbar">
-                <Link to="/"><h1>Online Bibliotek</h1></Link>
+                <h1>Online Bibliotek</h1>
                 <ul className="homelinks">
                     <Link to="/">Hjem</Link>
                 </ul>
