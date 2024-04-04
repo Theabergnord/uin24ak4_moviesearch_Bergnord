@@ -1,12 +1,22 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
-  font-family: "Playfaire";
+  font-family: "Playfaire", serif;
   color: black;
 }
 
-.navbar{
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.navbar {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -14,26 +24,27 @@
   margin: 0 auto;
   border-bottom: 1px solid purple;
 }
-.navbar h1{
+.navbar h1 {
   color: purple;
 }
-.navbar a{
+.navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: purple;
 }
 
-.homelinks{
+.homelinks {
   margin-left: auto;
 }
 
-input{
+input {
   margin: 5px;
 }
-.search-input{
+
+.search-input {
   width: 300px;
   height: 25px;
   border-radius: 50px;
@@ -41,59 +52,46 @@ input{
   padding-left: 10px;
 }
 
-.button{
+.button {
   width: 100px;
   height: 32px;
   border: 2px solid purple;
   border-radius: 50px;
   background-color: white;
 }
-.button:hover{
+.button:hover {
   background-color: purple;
   color: white;
 }
 
-.content{
-  max-width: 800px;
-  margin: 40px auto;
-}
-
-.bookcard{
-  margin-top: 10px;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: rgb(246, 240, 246);
-}
-
-.bookcard button{
-  margin-top: 5px;
-  width: 150px;
-  height: 32px;
-  border: 2px solid purple;
-  border-radius: 50px;
-  background-color:  rgb(246, 240, 246);
-}
-
-.bookcard button:hover{
-  background-color: purple;
-  color: white;
-}
-
-.bookcard img{
-  width: 50px;
-  height: auto;
-}
-
-.loading{
+.loading {
   margin-top: 1rem;
   font-size: 18;
   font-weight: bold;
   color: purple;
 }
 
-footer{
-  text-align: center;
-  margin-bottom: 20px;
-  width: 100%;
-}*/
+.bookcard {
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(246, 240, 246);
+}
+.bookcard button {
+  margin-top: 5px;
+  width: 150px;
+  height: 32px;
+  border: 2px solid purple;
+  border-radius: 50px;
+  background-color: rgb(246, 240, 246);
+}
+.bookcard button:hover {
+  background-color: purple;
+  color: white;
+}
+.bookcard img {
+  width: 50px;
+  height: auto;
+}
 
+/*# sourceMappingURL=main.css.map */

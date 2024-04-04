@@ -1,0 +1,25 @@
+.bookcard {
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(246, 240, 246);
+
+  button {
+    margin-top: 5px;
+    width: 150px;
+    height: 32px;
+    border: 2px solid purple;
+    border-radius: 50px;
+    background-color: rgb(246, 240, 246);
+
+      &:hover {
+        background-color: purple;
+        color: white;
+      }
+  }
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+}
